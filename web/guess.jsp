@@ -26,7 +26,7 @@
 
 %>
 
-<form class="form">
+<form class="form" action="/controller">
     Your nric is <%=nric%><br>
     your email address is <%=email%>
 <input type="text" name="guess" placeholder="Pick your lucky number">
