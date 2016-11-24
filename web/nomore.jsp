@@ -12,5 +12,8 @@
 </head>
 <body>
 
+You have exceeded the maximum number of tries! Come back again tomorrow!
+<a href="guess.jsp">Back to Home</a>
+
 </body>
 </html>

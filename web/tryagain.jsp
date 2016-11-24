@@ -12,5 +12,10 @@
 </head>
 <body>
 
+
+
+Your number is <%=request.getAttribute("gus")%>
+<a href="guess.jsp">Back to home</a>
+
 </body>
 </html>

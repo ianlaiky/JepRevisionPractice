@@ -12,5 +12,8 @@
 </head>
 <body>
 
+Congratulation <%=session.getAttribute("nric")%>,<%=session.getAttribute("guss")%> is the correct number!
+<a href="guess.jsp">Back to Home</a>
+
 </body>
 </html>

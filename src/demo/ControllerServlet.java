@@ -24,7 +24,7 @@ public class ControllerServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String nric = (String) session.getAttribute("nric");
         String email = (String) session.getAttribute("email");
-
+        session.setAttribute("guss",guessInt);
         int result = Guess.getInstance().guess(nric, guessInt);
 
         if (result == 0) {
@@ -42,6 +42,7 @@ public class ControllerServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/tryagain.jsp").forward(request, response);
         }
 
+//i
 
 
     }

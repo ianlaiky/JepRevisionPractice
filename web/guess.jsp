@@ -21,8 +21,21 @@
 </head>
 <body>
 <%
+
+
     String nric = request.getParameter("nric");
     String email = request.getParameter("email");
+
+   if(nric!=null && email != null){
+       session.setAttribute("nric",nric);
+       session.setAttribute("email",email);
+   }else{
+       nric = (String) session.getAttribute("nric");
+       email = (String) session.getAttribute("email");
+
+   }
+
+
 
 %>
 

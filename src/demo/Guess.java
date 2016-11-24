@@ -40,6 +40,11 @@ public class Guess {
         -1 - Your number is lower than the lucky number
         999 - Your have tried 3 times, you cannot try again
      */
+
+    public int num(){
+        return luckyNumber;
+    }
+
     public int guess(String nric, int value) {
         if (userList.containsKey(nric)) {
             Integer i = userList.get(nric);
